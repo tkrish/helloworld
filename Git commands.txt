@@ -1,0 +1,20 @@
+GIT:
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+  git init ( to track specific folder)
+  git status
+  git add
+  git commit -m "your message here"
+  dir > NEW-file-name.extensioin ( i.e index.html, test.txt, etc)
+
+  git log
+  git --help
+
+GIT and Github:
+
+  git remote add origin https://github.com/tkrish/testrepo.git
+  git push -u origin master
+
+ 
+addming
