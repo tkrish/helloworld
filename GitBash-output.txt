@@ -1,0 +1,117 @@
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code
+$ git init
+Initialized empty Git repository in C:/Users/lenovo/Desktop/Code/.git/
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Git commands.txt
+        Hello.class
+        Hello.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$ git add .
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Git commands.txt
+        new file:   Hello.class
+        new file:   Hello.java
+
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$ git commit -m "added hello world program"
+[master (root-commit) 72ab88e] added hello world program
+ 3 files changed, 31 insertions(+)
+ create mode 100644 Git commands.txt
+ create mode 100644 Hello.class
+ create mode 100644 Hello.java
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$ git remote add origin https://github.com/tkrish/helloworld.git
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.08 KiB | 138.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/tkrish/helloworld.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$ dir > readme.txt
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$ git add readme.txt
+warning: LF will be replaced by CRLF in readme.txt.
+The file will have its original line endings in your working directory
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   readme.txt
+
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$ git commit -m "new file added"
+[master bfc2360] new file added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 316 bytes | 105.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/tkrish/helloworld.git
+   72ab88e..bfc2360  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+lenovo@DESKTOP-GP9SNOI MINGW64 ~/Desktop/Code (master)
+$
